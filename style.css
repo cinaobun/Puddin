@@ -8,3 +8,10 @@ h1 {
   color: #6b88c4;
   font-size: 3rem;
 }
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

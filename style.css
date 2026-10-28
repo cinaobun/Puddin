@@ -24,3 +24,15 @@ h1 {
   border: 2px solid #6b88c4;
   border-radius: 50%;
 }
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.box {
+  height: 140px;
+  border: 2px solid #1a1a1a;
+  border-radius: 14px;
+}

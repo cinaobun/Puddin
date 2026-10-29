@@ -2,7 +2,7 @@ let sounds = [];
 let index = 0;
 
 const audio = new Audio();
-audio.volume = 0.45;
+audio.volume = 0.25;
 
 async function start() {
   const response = await fetch("sounds/sounds.json");

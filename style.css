@@ -11,7 +11,7 @@ body {
   align-items: center;
   gap: 1.5rem;
   font-family: sans-serif;
-  background: url("icons/space.jpg") center / cover no-repeat fixed;
+  background: url("icons/cloud.jpg") center / cover no-repeat fixed;
 }
 
 .card {
@@ -98,6 +98,6 @@ h1 {
   position: absolute;
   inset: -20px;
   z-index: -1;
-  background: url("icons/space.jpg") center / cover fixed;
+  background: url("icons/cloud.jpg") center / cover fixed;
   filter: blur(12px);
 }

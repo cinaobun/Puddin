@@ -1,3 +1,9 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #bac8e0;
+  --ink: #36425e;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +17,8 @@ body {
   align-items: center;
   gap: 1.5rem;
   font-family: sans-serif;
-  background: url("icons/cloudb.jpg") center / cover no-repeat fixed;
+  color: var(--ink);
+  background: var(--primary);
 }
 
 .card {
@@ -23,8 +30,8 @@ body {
   width: 90%;
   max-width: 900px;
   padding: 3rem;
-  border: 6px solid #6b88c4;
-  border-radius: 15px 15px 15px / 15px 15px 15px;
+  border-radius: 24px;
+  background: var(--secondary);
 }
 
 .side {
@@ -37,15 +44,14 @@ body {
 .avatar {
   width: 160px;
   height: 160px;
-  background: white;
-  border: 2px solid #6b88c4;
+  border: 3px solid var(--primary);
   border-radius: 50%;
   object-fit: cover;
 }
 
 .box {
   height: 140px;
-  border: 2px solid #1a1a1a;
+  border: 2px solid var(--primary);
   border-radius: 14px;
 }
 
@@ -58,7 +64,6 @@ body {
 h1 {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: #6b88c4;
   font-size: 3rem;
 }
 
@@ -72,7 +77,6 @@ h1 {
   text-align: center;
   font-size: 1.2rem;
   font-family: "Patrick Hand", sans-serif;
-  color: #6b88c4;
 }
 
 .wave {
@@ -82,7 +86,7 @@ h1 {
   z-index: -1;
   width: 200%;
   height: 80px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath fill='%236b88c4' fill-opacity='0.65' d='M0 5 Q12.5 3 25 5 T50 5 T75 5 T100 5 V10 H0 Z'/%3E%3C/svg%3E") repeat-x;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath fill='%23ffffff' fill-opacity='0.5' d='M0 5 Q12.5 3 25 5 T50 5 T75 5 T100 5 V10 H0 Z'/%3E%3C/svg%3E") repeat-x;
   background-size: 50% 100%;
   animation: drift 14s linear infinite;
 }
@@ -91,13 +95,4 @@ h1 {
   to {
     transform: translateX(-50%);
   }
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: -20px;
-  z-index: -1;
-  background: url("icons/cloudb.jpg") center / cover fixed;
-  filter: blur(12px);
 }

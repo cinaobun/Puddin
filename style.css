@@ -45,6 +45,13 @@ body {
   border-radius: 14px;
 }
 
+.site-name {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6b88c4;
+}
+
 .content {
   flex: 1;
   display: flex;

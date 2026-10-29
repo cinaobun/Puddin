@@ -93,3 +93,20 @@ h1 {
   font-family: "Patrick Hand", sans-serif;
   color: #6b88c4;
 }
+
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  height: 70%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 20' preserveAspectRatio='none'%3E%3Cpath fill='%236b88c4' d='M0 10 Q40 0 80 10 T160 10 V20 H0 Z'/%3E%3C/svg%3E") repeat-x;
+  background-size: 50% 100%;
+  animation: drift 5s linear infinite;
+}
+
+@keyframes drift {
+  to {
+    transform: translateX(-50%);
+  }
+}

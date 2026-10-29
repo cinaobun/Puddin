@@ -11,7 +11,7 @@ body {
   align-items: center;
   gap: 1.5rem;
   font-family: sans-serif;
-  background: #a8c7e7;
+  background: url("icons/space.jpg") center / cover no-repeat fixed;
 }
 
 .card {

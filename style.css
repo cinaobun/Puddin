@@ -1,6 +1,7 @@
 :root {
   --primary: #ffffff;
   --secondary: #bac8e0;
+  --third: #98aed5;
   --ink: #36425e;
 }
 
@@ -31,7 +32,7 @@ body {
   max-width: 900px;
   padding: 3rem;
   border-radius: 24px;
-  background: var(--secondary);
+  background: var(--third);
 }
 
 .side {

@@ -1,5 +1,5 @@
 let sounds = [];
-index = Math.floor(Math.random() * sounds.length);
+let index = 0;
 
 const audio = new Audio();
 audio.volume = 0.45;
@@ -7,6 +7,7 @@ audio.volume = 0.45;
 async function start() {
   const response = await fetch("sounds/sounds.json");
   sounds = await response.json();
+  index = Math.floor(Math.random() * sounds.length);
   playTrack();
 }
 

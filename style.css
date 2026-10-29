@@ -92,3 +92,12 @@ h1 {
     transform: translateX(-50%);
   }
 }
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  z-index: -1;
+  background: url("icons/blue-thing.jpg") center / cover;
+  filter: blur(12px);
+}

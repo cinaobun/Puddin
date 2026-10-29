@@ -1,20 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
-  background: #a8c7e7;
+  min-height: 100vh;
   margin: 0;
-}
-
-h1 {
-  color: #6b88c4;
-  font-size: 3rem;
-}
-
-#center {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  font-family: sans-serif;
+  background: #a8c7e7;
+}
+
+.card {
+  position: relative;
+  display: flex;
   gap: 3rem;
+  width: 90%;
+  max-width: 900px;
+  padding: 3rem;
+  border: 6px solid #6b88c4;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-shrink: 0;
 }
 
 .avatar {
@@ -25,38 +38,38 @@ h1 {
   border-radius: 50%;
 }
 
-.side {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
 .box {
   height: 140px;
   border: 2px solid #1a1a1a;
   border-radius: 14px;
 }
 
-.socials {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.6rem;
-  border: 2px solid #1a1a1a;
-  border-radius: 12px;
+.content {
+  flex: 1;
 }
 
-.socials a {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  color: inherit;
-  text-decoration: none;
+h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #6b88c4;
+  font-size: 3rem;
+}
+
+.content p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.music {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 56px;
+  height: 56px;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background: transparent;
   border: 2px solid #1a1a1a;
   border-radius: 50%;
-}
-
-.socials a:hover {
-  transform: scale(1.2);
+  cursor: pointer;
 }

@@ -36,6 +36,7 @@ body {
   background: white;
   border: 2px solid #6b88c4;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .box {

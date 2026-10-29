@@ -88,3 +88,14 @@ h1 {
   font-size: 1.2rem;
   color: #6b88c4;
 }
+
+.site-name {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6b88c4;
+}

@@ -67,25 +67,6 @@ h1 {
   overflow-wrap: anywhere;
 }
 
-.music {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 56px;
-  height: 56px;
-  font-size: 1.5rem;
-  font-family: inherit;
-  background: transparent;
-  border: 2px solid #1a1a1a;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.music.playing {
-  background: #6b88c4;
-  color: white;
-}
-
 .site-name {
   margin: 0;
   text-align: center;
@@ -100,7 +81,7 @@ h1 {
   bottom: 0;
   z-index: -1;
   width: 200%;
-  height: 180px;
+  height: 80px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath fill='%236b88c4' fill-opacity='0.35' d='M0 5 Q12.5 3 25 5 T50 5 T75 5 T100 5 V10 H0 Z'/%3E%3C/svg%3E") repeat-x;
   background-size: 50% 100%;
   animation: drift 14s linear infinite;

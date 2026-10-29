@@ -83,13 +83,6 @@ h1 {
 }
 
 .site-name {
-  margin: 0;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #6b88c4;
-}
-
-.site-name {
   position: absolute;
   bottom: 1.2rem;
   left: 50%;

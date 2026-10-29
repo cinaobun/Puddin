@@ -32,7 +32,7 @@ body {
   max-width: 900px;
   padding: 3rem;
   border-radius: 24px;
-  background: var(--third);
+  background: var(--secondary);
 }
 
 .side {
@@ -45,7 +45,7 @@ body {
 .avatar {
   width: 160px;
   height: 160px;
-  border: 3px solid var(--primary);
+  border: 3px solid var(--third);
   border-radius: 50%;
   object-fit: cover;
 }

@@ -1,5 +1,5 @@
 let sounds = [];
-let index = 0;
+index = Math.floor(Math.random() * sounds.length);
 
 const audio = new Audio();
 audio.volume = 0.45;

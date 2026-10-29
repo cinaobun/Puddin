@@ -98,6 +98,6 @@ h1 {
   position: absolute;
   inset: -20px;
   z-index: -1;
-  background: url("icons/space.jpg") center / cover;
+  background: url("icons/space.jpg") center / cover fixed;
   filter: blur(12px);
 }

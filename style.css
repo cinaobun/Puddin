@@ -24,16 +24,11 @@ body {
 }
 
 .card {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
   display: flex;
   gap: 3rem;
   width: 90%;
   max-width: 900px;
   padding: 3rem;
-  border-radius: 24px;
-  background: var(--secondary);
 }
 
 .side {

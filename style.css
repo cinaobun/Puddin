@@ -56,7 +56,7 @@ body {
 }
 
 .content {
-  transform: translate(20px, 20px);
+  transform: translate(50px, 100px);
   flex: 1;
   display: flex;
   flex-direction: column;

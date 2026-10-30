@@ -48,7 +48,7 @@ body {
 
 .box {
   height: 140px;
-  border: 2px solid var(--third);
+  border: 2px solid var(--secondary);
   border-radius: 14px;
 }
 

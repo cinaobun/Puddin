@@ -1,27 +1,42 @@
-let sounds = [];
-let index = 0;
+const enterScreen = document.getElementById("token");
+const enterButton = document.getElementById("token-button");
 
 const audio = new Audio();
 audio.volume = 0.25;
+audio.preload = "auto";
 
-async function start() {
-  const response = await fetch("sounds/sounds.json");
-  sounds = await response.json();
-  index = Math.floor(Math.random() * sounds.length);
-  playTrack();
+let sounds = [];
+let index = 0;
+
+function load() {
+  audio.src = "sounds/" + sounds[index].file;
+  audio.load();
 }
 
-function playTrack() {
-  audio.src = "sounds/" + sounds[index].file;
+function next() {
+  index = (index + 1) % sounds.length;
+  load();
   audio.play().catch(() => {});
 }
 
-function nextTrack() {
-  index = (index + 1) % sounds.length;
-  playTrack();
-}
+const ready = fetch("sounds/sounds.json")
+  .then((res) => res.json())
+  .then((data) => {
+    sounds = data;
+    index = Math.floor(Math.random() * sounds.length);
+    load();
+  });
 
-audio.addEventListener("ended", nextTrack);
-audio.addEventListener("error", nextTrack);
+enterButton.addEventListener(
+  "click",
+  async () => {
+    enterScreen.classList.add("is-hidden");
+    setTimeout(() => enterScreen.remove(), 600);
+    await ready;
+    audio.play().catch(() => {});
+  },
+  { once: true },
+);
 
-document.addEventListener("click", start, { once: true });
+audio.addEventListener("ended", next);
+audio.addEventListener("error", next);

@@ -1,22 +1,79 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <title>mwah</title>
-    <link rel="icon" type="image/png" href="icons/ice.png" />
+    <meta name="description" content="gay goy :3" />
+    <link rel="canonical" href="https://mwahh.xyz/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="mwah" />
+    <meta property="og:url" content="https://mwahh.xyz/" />
+    <meta property="og:site_name" content="mwahh.xyz" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://mwahh.xyz/src/images/avatar.webp"
+    />
+    <meta property="og:image:alt" content="mwah" />
+
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/icon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/icon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <div class="wave"></div>
-  <main class="card">
-    <img class="avatar" src="icons/blue-thing.jpg" alt="avatar">
-    <section class="content">
-      <h1>dababesaba</h1>
-      <p>dababesabadababesabadababesabadababesabadababesaba</p>
-    </section>
-  </main>
-  <p class="site-name">mwahh.xyz</p>
-  <script src="script.js"></script>
-</body>
+    <div
+      id="token"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="token-title"
+    >
+      <button id="token-button" type="button">
+        <img
+          class="token"
+          src="src/images/token.webp"
+          alt="token"
+          fetchpriority="high"
+        />
+        <small id="token-title">click to enter!</small>
+      </button>
+    </div>
+    <main class="card">
+      <img
+        class="avatar"
+        src="src/images/avatar.webp"
+        alt="avatar"
+        width="160"
+        height="160"
+      />
+      <section class="content">
+        <h1>Mah</h1>
+        <p>lorem ipsum dolor sit amet</p>
+      </section>
+    </main>
+    <footer>
+      <p class="site-name">mwahh.xyz</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
 </html>

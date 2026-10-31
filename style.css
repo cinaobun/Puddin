@@ -57,7 +57,7 @@ body {
 }
 
 .content {
-  /*transform: translate(160px, 250px);*/
+  transform: translate(0px, 215px);
   text-align: center;
   flex: 1;
   display: flex;
@@ -76,7 +76,7 @@ h1 {
 }
 
 .site-name {
-  transform: translate(0px, 0px);
+  transform: translate(0px, 155px);
   margin: 0;
   text-align: bottom;
   font-size: 1.2rem;

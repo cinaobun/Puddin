@@ -134,6 +134,10 @@ footer {
   text-align: center;
 }
 
+.flag {
+  margin-top: 1rem;
+}
+
 .site-name {
   margin: 0;
   font-size: 0.87rem;

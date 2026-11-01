@@ -3,6 +3,12 @@
 
 :root {
   --ink: #36425e;
+  --muted: #6c7f85;
+  --paper: #f5f9ff;
+  --line: #d6e4ea;
+  --accent: #86c8ef;
+  --card: #fafdff;
+  --card-hover: #edf6ff;
 }
 
 * {
@@ -93,6 +99,28 @@ h1 {
   align-items: center;
   gap: 10px;
   padding-top: 0.5rem;
+}
+
+iconify-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.link-card iconify-icon {
+  font-size: 1.25rem;
+}
+
+.link-card:hover,
+.link-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background: var(--card-hover);
+  color: var(--accent);
+  outline: none;
+}
+
+.link-card:active {
+  transform: scale(1);
 }
 
 footer {

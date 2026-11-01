@@ -3,12 +3,12 @@
 
 :root {
   --ink: #36425e;
-  --muted: #6c7f85;
+  --muted: #6c7885;
   --paper: #f5f9ff;
-  --line: #d6e4ea;
-  --accent: #86c8ef;
-  --card: #fafdff;
-  --card-hover: #edf6ff;
+  --line: #d6deea;
+  --accent: #86a6ef;
+  --card: #fafcff;
+  --card-hover: #edf4ff;
 }
 
 * {

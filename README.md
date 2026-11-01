@@ -27,7 +27,7 @@ The entire website is open source. All the code lives in this repository.
 
 - 🎵 **Background music** — a looping playlist that plays a random track on every time the page loads.  
 - 🚪 **Enter screen** — browsers block sound until the visitor interacts with the page, so a click-to-enter screen starts the music (stolen from guns.lol lmao).
-- 🌊 **Animated wave** — a **CSS** wave along the bottom of the page.
+- 🌊 **Wave** — a **CSS** wave along the bottom of the page.
 - 🎨 **Color palette** — the whole palette is at the top of `style.css`, as variables.
 - 🔗 **Social links** — buttons that redirect to my socials, icons come from [Iconify](https://iconify.design/).
 - 🔤 **Font** — [DynaPuff](https://fonts.google.com/specimen/DynaPuff) from Google Fonts.

@@ -81,15 +81,16 @@ h1 {
   flex: 0 0 45px;
   place-items: center;
   height: 45px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   border-radius: 50%;
-  background: #ffffff;
-  color: #1f1f1f;
+  background: var(--card);
+  color: var(--ink);
   text-decoration: none;
-  transition: transform 0.15s ease,
-              background 0.15s ease,
-              color 0.15s ease,
-              border-color 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .links {

@@ -90,6 +90,7 @@ h1 {
   flex: 0 0 45px;
   place-items: center;
   height: 45px;
+  width: 45px;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: var(--card);

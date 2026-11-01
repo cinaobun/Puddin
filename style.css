@@ -76,6 +76,15 @@ h1 {
   overflow-wrap: anywhere;
 }
 
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 0.5rem;
+}
+
 .link-card {
   display: grid;
   flex: 0 0 45px;
@@ -91,15 +100,6 @@ h1 {
     background 0.15s ease,
     color 0.15s ease,
     border-color 0.15s ease;
-}
-
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding-top: 0.5rem;
 }
 
 iconify-icon {
